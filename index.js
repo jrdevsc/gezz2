@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
-  console.log(req.body);
+  // console.log(req.body);
   res.render('index');
 });
 
@@ -42,6 +42,6 @@ app.post('/form', function(req, res){
 
 var port = process.env.PORT || 8080;
 
-app.listen($PORT, function(){
+app.listen(port, function(){
   console.log("Server Started...");
 });
