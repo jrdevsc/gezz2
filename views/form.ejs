@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 well">
+        <form action="" method="POST">
+          <h3>Mach//Parts</h3>
+          <div class="form-group">
+            <label for="myMachine">Machine:</label>
+            <select name="myMachine" id="myMachine" class="form-control">
+              <option value="MGB1">MGB1</option>
+              <option value="MGA3">MGA3</option>
+              <option value="r2d3">r2d2</option>
+              <option value="MFE9">MFE9</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="myPart">Part: </label>
+            <select name="myPart" id="myPart">
+              <option value="7ha.01.s3n">7ha.01.s3n</option>
+              <option value="7ha.02.s5n">7ha.02.s5n</option>
+              <option value="hugetote">Huge Black Tote</option>
+              <option value="goodDay">Have a good day!</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="myMessage">Special Instructions:</label>
+            <input type="text" id="myMessage" name="myMessage" placeholder="Enter Message">
+          </div>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+<% include partials/footer %>
