@@ -5,7 +5,7 @@ var authToken = 'e8779953051872673c8693a98c08ae25';
 var express = require('express');
 var app = express();
 var client = require('twilio')(accountSid, authToken);
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -34,6 +34,7 @@ app.post('/form', function(req, res){
   }, function(err, message){
     console.log(message.sid);
   });
+
 
   res.redirect('/form');
 
